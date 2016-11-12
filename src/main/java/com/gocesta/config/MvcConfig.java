@@ -61,16 +61,6 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 		return ds;
 	}
 
-  /*  @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/vendor/**")
-                .addResourceLocations("/resources/vendor/")
-                .setCachePeriod(0)
-                .resourceChain(true)
-                .addResolver(new GzipResourceResolver())
-                .addResolver(new PathResourceResolver());
-    }*/
-
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
